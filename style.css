@@ -1,0 +1,209 @@
+/* Estilos Gerais */
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu&display=swap");
+
+body {
+  font-family: "Ubuntu", sans-serif;
+}
+
+.container {
+  width: 80%;
+  margin: 0px 10% 0px 10%;
+}
+
+/* Introdução */
+
+.intro {
+  background: url(assets/hero-image.png) no-repeat;
+  background-position: center center;
+  background-size: cover;
+}
+
+.redes-sociais {
+  float: right;
+  position: relative;
+  top: -300px;
+}
+
+.redes-sociais ul li {
+  margin-bottom: 25px;
+  text-align: center;
+}
+
+header {
+  padding: 20px 0px 120px;
+}
+
+header span {
+  padding-left: 10px;
+  color: rgba(17, 17, 17, 0.5);
+}
+
+h1 {
+  font-size: 34px;
+  line-height: 48px;
+}
+
+.intro-info {
+  padding: 20px 0px 100px;
+}
+
+.intro-info p {
+  font-size: 20px;
+  color: rgba(17, 17, 17, 0.5);
+  margin-bottom: 25px;
+}
+
+.intro-info strong {
+  color: #226ed8;
+}
+
+.intro-info button {
+  border: none;
+  font-size: 18px;
+  font-weight: bold;
+  color: #fff;
+  background-color: #226ed8;
+  padding: 15px 25px;
+  border-radius: 25px;
+}
+
+.intro-info span {
+  font-size: 18px;
+  color: #226ed8;
+  margin: 0px 5px 0 10px;
+}
+
+.intro-info img {
+  position: relative;
+  top: -1.5px;
+}
+
+/* Sobre */
+.sobre {
+  padding: 60px 0px;
+}
+
+.sobre h2 {
+  font-size: 30px;
+  font-weight: bold;
+  margin-bottom: 30px;
+}
+
+.sobre-info {
+  display: flex;
+}
+
+.sobre p {
+  background-color: #f2f3f4;
+  padding: 15px 40px;
+  font-size: 16px;
+  line-height: 25px;
+  max-width: 320px;
+}
+
+/* Vagas */
+.vagas {
+  padding: 20px 0px 20px;
+}
+
+.vagas h2 {
+  font-size: 30px;
+  font-weight: bold;
+  margin-bottom: 30px;
+}
+
+.vagas-itens {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.vagas-item {
+  margin-right: 60px;
+}
+
+.vagas-item:nth-child(3n) {
+  margin: 0px;
+}
+
+.vagas-item span {
+  position: relative;
+  top: 5px;
+  color: #226ed8;
+  font-size: 22px;
+}
+
+.vagas-item b {
+  padding-left: 10px;
+  color: rgba(17, 17, 17, 0.5);
+}
+
+.vagas-item p {
+  width: 320px;
+  font-size: 16px;
+  line-height: 24px;
+  padding: 10px 0px 60px;
+}
+
+/* Empresas/Alumni */
+.alumni {
+  padding: 0px 0px 120px 0px;
+}
+
+.alumni h2 {
+  font-size: 30px;
+  font-weight: bold;
+  margin-bottom: 40px;
+}
+
+.alumni ul {
+  display: flex;
+  /* justify-content: space-between; */
+}
+
+.alumni ul li {
+  margin-right: 70px;
+}
+
+/* Footer */
+
+footer {
+  background-color: #000;
+}
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  padding: 60px 0px;
+  color: #fdfdfd;
+}
+
+.icons-redes-sociais img {
+  margin-right: 10px;
+}
+
+.icons-redes-sociais span {
+  margin-left: 20px;
+  position: relative;
+  top: 4px;
+}
+
+footer .info {
+  position: relative;
+  top: 5px;
+}
+
+/* footer .info span:last-child {
+  margin-left: 10px;
+} */
+
+footer .info span:last-child::before {
+  content: "";
+  width: 50px;
+  height: 1px;
+  background-color: rgba(253, 253, 253, 0.3);
+  display: inline-block;
+  margin: 0px 10px;
+  position: relative;
+  top: -4px;
+  left: -2px;
+}
