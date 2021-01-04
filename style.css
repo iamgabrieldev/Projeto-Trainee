@@ -93,6 +93,7 @@ h1 {
   display: flex;
   position: relative;
   left: -80px;
+  width: 820px;
 }
 
 .sobre-info img {
@@ -107,6 +108,7 @@ h1 {
   z-index: 10;
   background-color: rgba(0, 0, 0, 0.7);
   padding: 10px;
+  cursor: pointer;
 }
 .sobre-info .seta-direita {
   position: relative;
@@ -115,6 +117,7 @@ h1 {
   z-index: 10;
   background-color: rgba(0, 0, 0, 0.7);
   padding: 10px;
+  cursor: pointer;
 }
 
 .sobre p {
@@ -122,7 +125,6 @@ h1 {
   padding: 15px 40px;
   font-size: 16px;
   line-height: 25px;
-  max-width: 320px;
 }
 
 .duvida {
