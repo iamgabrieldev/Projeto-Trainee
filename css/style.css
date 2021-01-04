@@ -13,7 +13,7 @@ body {
 /* Introdução */
 
 .intro {
-  background: url(assets/hero-image.png) no-repeat;
+  background: url(../assets/hero-image.png) no-repeat;
   background-position: center center;
   background-size: cover;
 }
