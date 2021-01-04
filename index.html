@@ -60,6 +60,16 @@
     <section class="sobre container">
       <h2>Sobre Nós</h2>
       <div class="sobre-info">
+        <img
+          class="seta-esquerda"
+          src="assets/icons/seta-esquerda.svg"
+          alt="seta esquerda"
+        />
+        <img
+          class="seta-direita"
+          src="assets/icons/seta-direita.svg"
+          alt="seta direita"
+        />
         <img src="assets/sobre-bg.png" alt="imagem dos membros da UnectJR" />
         <p>
           A Unect Jr. é uma Empresa Júnior vinculada aos cursos de Computação da
@@ -68,6 +78,13 @@
           ambiente ideal para que eles se desenvolvam e apliquem os seus
           conhecimentos, que vão muito além da área de computação.
         </p>
+      </div>
+      <div class="duvida">
+        <img
+          class="btn-duvida"
+          src="assets/icons/interrogacao.svg"
+          alt="botao de duvida"
+        />
       </div>
     </section>
 
@@ -218,5 +235,27 @@
         </div>
       </div>
     </footer>
+    <div id="modal-info" class="modal-container">
+      <div class="modal">
+        <h3>Pergunta pra gente 😊</h3>
+        <form action="">
+          <label for="">Nome</label>
+          <input type="text" name="nome" id="nome" />
+          <label for="email">E-mail</label>
+          <input type="text" name="email" id="email" />
+          <label for="mensagem">Mensagem</label>
+          <textarea
+            name="mensagem"
+            id=""
+            cols="30"
+            rows="10"
+            placeholder="Escreva aqui..."
+          ></textarea>
+        </form>
+        <span class="modal-enviar">Enviar</span>
+        <span class="modal-cancelar">Cancelar</span>
+      </div>
+    </div>
+    <script src="script.js"></script>
   </body>
 </html>

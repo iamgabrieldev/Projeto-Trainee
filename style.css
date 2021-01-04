@@ -91,6 +91,30 @@ h1 {
 
 .sobre-info {
   display: flex;
+  position: relative;
+  left: -80px;
+}
+
+.sobre-info img {
+  position: relative;
+  filter: saturate(30%);
+}
+
+.sobre-info .seta-esquerda {
+  position: relative;
+  top: 0px;
+  left: 80px;
+  z-index: 10;
+  background-color: rgba(0, 0, 0, 0.7);
+  padding: 10px;
+}
+.sobre-info .seta-direita {
+  position: relative;
+  top: 0px;
+  left: 350px;
+  z-index: 10;
+  background-color: rgba(0, 0, 0, 0.7);
+  padding: 10px;
 }
 
 .sobre p {
@@ -99,6 +123,23 @@ h1 {
   font-size: 16px;
   line-height: 25px;
   max-width: 320px;
+}
+
+.duvida {
+  position: fixed;
+  top: 200px;
+  left: 1250px;
+  display: inline-block;
+  background-color: #333;
+  border-radius: 50%;
+  padding: 5px;
+  cursor: pointer;
+}
+
+.btn-duvida {
+  padding: 5px 10px;
+  border: 1px solid #fff;
+  border-radius: 50%;
 }
 
 /* Vagas */
@@ -192,10 +233,6 @@ footer .info {
   top: 5px;
 }
 
-/* footer .info span:last-child {
-  margin-left: 10px;
-} */
-
 footer .info span:last-child::before {
   content: "";
   width: 50px;
@@ -206,4 +243,90 @@ footer .info span:last-child::before {
   position: relative;
   top: -4px;
   left: -2px;
+}
+
+.modal-container {
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.5);
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  z-index: 2000;
+  display: none;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-container.mostrar {
+  display: flex;
+}
+
+.modal {
+  background-color: #fff;
+}
+
+@keyframes modal {
+  from {
+    opacity: 0;
+    transform: translate3d(0, -60px, 0);
+  }
+  to {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+.mostrar .modal {
+  animation: modal 0.5s;
+}
+
+.modal h3 {
+  font-size: 26px;
+  padding: 40px;
+  color: #226ed8;
+  background-color: #ececec;
+}
+
+.modal form {
+  padding: 10px 40px 20px;
+}
+
+.modal form label {
+  display: block;
+  margin: 15px 0px 5px;
+}
+
+.modal form input {
+  width: 300px;
+  height: 40px;
+  border: solid rgba(0, 0, 0, 0.2) 1px;
+}
+
+.modal form input:hover {
+  border: solid rgba(0, 0, 0, 1) 1px;
+}
+
+.modal form textarea {
+  width: 300px;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+.modal form textarea:hover {
+  border: 1px solid rgba(0, 0, 0, 1);
+}
+
+.modal-cancelar,
+.modal-enviar {
+  cursor: pointer;
+  float: right;
+}
+
+.modal-enviar {
+  margin: 0px 45px 20px 20px;
+  color: #000;
+}
+
+.modal-cancelar {
+  color: rgba(0, 0, 0, 0.5);
 }
